@@ -31,10 +31,22 @@
 
     <div id="help" style="background-color: chartreuse;font-size: larger;font-family: cursive;">
         <button type="button" class="btn btn-link btn-sm"><p>Help report</p></button>  
-   <button onclick="NewGame()">NewGame</button>
+   
         
     </div>
+<div>
 
+<p style="font-family: fantasy;background-color: rgb(129, 239, 221); color: black;">Number of Locations to Search For the treasure,Beware the traps</p>
+
+<p id="locations" style="font-family: monospace;background-color: rgb(165, 255, 182); color: black;">Locations Checked is :0</p>
+<p id="penalty" style="font-family: monospace;background-color: rgb(236, 236, 236); color: black;">Penalty upto now is :0</p>
+<p onclick="help()">"Click for help"</p>
+<p id="help" style="font-family: monospace;background-color: rgb(162, 199, 255); color: black;">Step faster</p><button onclick="NewGame()">NewGame</button>
+
+
+
+
+</div>
 
     <h3 style="text-align: center; text-shadow: blue; font-family: Helvetica;font-size: larger;background-color: deepskyblue;">GAME FIELD</h3>
     <div class="container">
@@ -158,8 +170,8 @@ if((location+2 ===treasure)||(location-2===treasure))
 else{texth= "Step Faster";}
  
 penalty=penalty+2;
-document.getElementById("penalty").innerHTML="Penalty is :"+penalty;
-document.getElementById("help").innerHTML="Help:-"+texth;
+document.getElementById("penalty").innerHTML="Penalty is :${penalty}";
+document.getElementById("help").innerHTML="Help:- ${texth}";
 
 //let texth=  "Can smell it";
 }
