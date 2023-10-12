@@ -1,93 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>WebAppsAssignment07SAYENDRANADHpirate paege</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <title>WebAppsAssignment07SAYENDRANADHpirate paege</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 
 </head>
+
 <body>
 
-    <h1 style="margin: auto; color: cadetblue; background-color: blanchedalmond; text-align: center;font-family: monospace;text-decoration:dashed silver;">Find the treasure by Sayendranadh Chowdary</h1>
-    <div style="margin: auto; color: rgb(172, 19, 22);background-color: rgb(217, 240, 232);text-align: center;font-size: 20px;">
-        <p style="background-color: rgb(255, 213, 97);font-family: serif;font-size: 25px;">Click on the locations to search for treasure, beware the traps</p>
-    </div>
-    <div id="locations" >
-        <p style="position: relative;background: scroll;background-color: darkblue;font-size: 19px;color: gold;">Number of locations checked is zero.</p>
-    </div>
-    <div id="penalty">
-        <p style="background-color: rgb(74, 103, 93);color: rgb(68, 103, 200);font-size: 50px;font-family: Haettenschweiler;">Penalty is zero.</p>
+    <h1
+        style="margin: auto; color: cadetblue; background-color: blanchedalmond; text-align: center;font-family: monospace;text-decoration:dashed silver;">
+        Find the treasure by Sayendranadh Chowdary</h1>
+    
     </div>
     <div style="background-color: darkkhaki; font-size: 66px;">
-        <button type="button" class="btn btn-link btn-sm"><p>Click for help.</p></button>  
+        <button type="button" class="btn btn-link btn-sm">
+            <p>Click for help.</p>
+        </button>
     </div>
 
     <div id="help" style="background-color: chartreuse;font-size: larger;font-family: cursive;">
-        <button type="button" class="btn btn-link btn-sm"><p>Help report</p></button>  
-   
-        
+        <button type="button" class="btn btn-link btn-sm">
+            <p>Help report</p>
+        </button>
+
+
     </div>
-<div>
+    <div>
 
-<p style="font-family: fantasy;background-color: rgb(129, 239, 221); color: black;">Number of Locations to Search For the treasure,Beware the traps</p>
+        <p style="font-family: fantasy;background-color: rgb(129, 239, 221); color: black;">Number of Locations to
+            Search For the treasure,Beware the traps</p>
 
-<p id="locations" style="font-family: monospace;background-color: rgb(165, 255, 182); color: black;">Locations Checked is :0</p>
-<p id="penalty" style="font-family: monospace;background-color: rgb(236, 236, 236); color: black;">Penalty upto now is :0</p>
-<p onclick="help()">"Click for help"</p>
-<p id="help" style="font-family: monospace;background-color: rgb(162, 199, 255); color: black;">Step faster</p><button onclick="NewGame()">NewGame</button>
+        <p id="location" style="font-family: monospace;background-color: rgb(165, 255, 182); color: black;">Locations
+            Checked is :0</p>
+        <p id="penalty" style="font-family: monospace;background-color: rgb(236, 236, 236); color: black;">Penalty upto
+            now is :0</p>
+        <p onclick="help()">"Click for help"</p>
+        <p id="help" style="font-family: monospace;background-color: rgb(162, 199, 255); color: black;">Step faster</p>
+        <button onclick="NewGame()">NewGame</button>
 
 
 
 
-</div>
+    </div>
 
-    <h3 style="text-align: center; text-shadow: blue; font-family: Helvetica;font-size: larger;background-color: deepskyblue;">GAME FIELD</h3>
+    <h3
+        style="text-align: center; text-shadow: blue; font-family: Helvetica;font-size: larger;background-color: deepskyblue;">
+        GAME FIELD</h3>
     <div class="container">
         <div class="row">
-            <div class="col-md-2"><img src="imag1.jpg" id="0" onclick="check(0)"
-                alt="searchlocation1" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag1.jpg"id="1"onclick="check(1)" alt="searchlocation2" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag1.jpg"id="2"onclick="check(2)" alt="searchlocation3" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag1.jpg"id="3 "onclick="check(3)"alt="searchlocation4" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag1.jpg"id="4 "onclick="check(4)"alt="searchlocation5" style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="0" onclick="check(0)" alt="searchlocation1"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="1" onclick="check(1)" alt="searchlocation2"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="2" onclick="check(2)" alt="searchlocation3"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="3" onclick="check(3)" alt="searchlocation4"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="4" onclick="check(4)" alt="searchlocation5"
+                    style="width:100px;height:100px;"></div>
         </div>
-            <div class="row">
-            <div class="col-md-2"><img src="img-2.jpg"id="5 "onclick="check(5)" alt="searchlocation1" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="img-2.jpg" id="6 "onclick="check(6)"alt="searchlocation2" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="img-2.jpg" id="7 "onclick="check(7)"alt="searchlocation3" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="img-2.jpg"id="8"onclick="check(8)" alt="searchlocation4" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="img-2.jpg"id="9 "onclick="check(9)" alt="searchlocation5" style="width:100px;height:100px;"></div>
+        <div class="row">
+            <div class="col-md-2"><img src="imag1.jpg" id="5" onclick="check(5)" alt="searchlocation1"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="6" onclick="check(6)" alt="searchlocation2"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="7" onclick="check(7)" alt="searchlocation3"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="8" onclick="check(8)" alt="searchlocation4"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="9" onclick="check(9)" alt="searchlocation5"
+                    style="width:100px;height:100px;"></div>
         </div>
-            <div class="row">
-            <div class="col-md-2"><img src="traoo1.jpg" id="10"onclick="check(10)"alt="searchlocation1" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="traoo1.jpg" onclick="check(11)"id="11 "alt="searchlocation2" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="traoo1.jpg"id="12 "onclick="check(12)" alt="searchlocation3" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="traoo1.jpg"id="13 "onclick="check(13)" alt="searchlocation4" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="traoo1.jpg"id="14 "onclick="check(14)" alt="searchlocation5" style="width:100px;height:100px;"></div>
+        <div class="row">
+            <div class="col-md-2"><img src="imag1.jpg" id="10" onclick="check(10)" alt="searchlocation1"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" onclick="check(11)" id="11" alt="searchlocation2"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="12" onclick="check(12)" alt="searchlocation3"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="13" onclick="check(13)" alt="searchlocation4"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="14" onclick="check(14)" alt="searchlocation5"
+                    style="width:100px;height:100px;"></div>
         </div>
-            <div class="row">
-            <div class="col-md-2"><img src="imag4.jpg"id="15 "onclick="check(15)" alt="searchlocation1" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag4.jpg"id="16"onclick="check(16)" alt="searchlocation2" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag4.jpg"id="17 "onclick="check(17)" alt="searchlocation3" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag4.jpg"id="18 " onclick="check(18)"alt="searchlocation4" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="imag4.jpg"id="19 " onclick="check(19)"alt="searchlocation5" style="width:100px;height:100px;"></div>
+        <div class="row">
+            <div class="col-md-2"><img src="imag1.jpg" id="15" onclick="check(15)" alt="searchlocation1"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="16" onclick="check(16)" alt="searchlocation2"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="17" onclick="check(17)" alt="searchlocation3"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="18" onclick="check(18)" alt="searchlocation4"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="19" onclick="check(19)" alt="searchlocation5"
+                    style="width:100px;height:100px;"></div>
         </div>
-            <div class="row">
-            <div class="col-md-2"><img src="trap3q.jpg"id="20 "onclick="check(20)" alt="searchlocation1" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="trap3q.jpg"id="21 " onclick="check(21)"alt="searchlocation2" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="trap3q.jpg"id="22 "onclick="check(22)" alt="searchlocation3" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="trap3q.jpg"id="23 "onclick="check(23)" alt="searchlocation4" style="width:100px;height:100px;"></div>
-            <div class="col-md-2"><img src="trap3q.jpg"id="24 "onclick="check(24)" alt="searchlocation5" style="width:100px;height:100px;"></div>
+        <div class="row">
+            <div class="col-md-2"><img src="imag1.jpg" id="20" onclick="check(20)" alt="searchlocation1"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="21" onclick="check(21)" alt="searchlocation2"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="22" onclick="check(22)" alt="searchlocation3"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="23" onclick="check(23)" alt="searchlocation4"
+                    style="width:100px;height:100px;"></div>
+            <div class="col-md-2"><img src="imag1.jpg" id="24" onclick="check(24)" alt="searchlocation5"
+                    style="width:100px;height:100px;"></div>
         </div>
-          
-        </div>
+
+    </div>
     </div>
 
 
@@ -95,109 +128,100 @@
 </body>
 
 <script>
-	function makeNewDiv(){
-		/* make the div and its text */
-		let element = document.createElement("div")
-		element.innerHTML = "an item after 3"
-		element.style.color = "orange"
+    function makeNewDiv() {
+        /* make the div and its text */
+        let element = document.createElement("div");
+        element.innerHTML = "an item after 3";
+        element.style.color = "orange";
 
-		/* add it to the container */
-		let container = document.getElementById('target')
-		container.appendChild(element)}
+        /* add it to the container */
+        let container = document.getElementById('target');
+        container.appendChild(element)
+    };
 
-        let ids = []
-    for(let i=0;i<25;i++)
-    {
-        ids[i]=i;
+    let ids = []
+    for (let i = 0; i < 25; i++) {
+        ids[i] = i;
     }
-        let checkCount=0;
-        let penalty=0;
-        let lastCheck=0;
-        let treasureLocation=5;
-        let trapLocation=18;
-        let gameover=false;
+    let checkCount = 0;
+    let penalty = 0;
+    let lastCheck = 0;
+    let treasureLocation = 5;
+    let trapLocation = 18;
+    let gameover = false;
 
-		function check(position)
-        {
-                if(gameover) return;
-                let id=ids[position];
-                let image=document.getElementById(id);
-                if(treasureLocation===position)
-                {
-                    image.src="img-2.jpg";
-                    checkCount+=1;
-                    penalty+=1;
-                    document.getElementById("Checkcount").innerHTML="Total locations checked now :"+checkCount;
-                    document.getElementById("penalty").innerHTML="Penalty upto now is :"+penalty;
+    function check(position) {
+        if (gameover) return;
+        let id = ids[position];
+        let image = document.getElementById(id);
+        if (treasureLocation === position) {
+            image.src = "img-2.jpg";
+            gameOver = true
+            penalty = penalty - 3
 
-
-                }
-                else if (position == trapLocation)
-                {image_source = "trap3q.jpg";
-                checkCount+=1;
-                    penalty+=1;
-                    document.getElementById("Checkcount").innerHTML="Total locations checked now :"+checkCount;
-                    document.getElementById("penalty").innerHTML="Penalty upto now is :"+penalty;
-
-                    
-            
-                 }
-        
-    else{ image_source = "traoo1.jpg"; checkCount+=1;
-                    penalty+=1;}
-
-                    document.getElementById("locations").innerHTML=checkCount;
-
-        if(position===treasure)
-        {
-            gameover=true;
-            penalty=penalty-3;
         }
-        loc_text = document.getElementById("locations");
-        loc_text.innerHTML = `Number of locations checked is ${checkCount}`;
-        pen_text = document.getElementById("penalty");
-        pen_text.innerHTML=`Penalty is ${penalty}`;
-       // document.getElementById("penalty").innerHTML="penalty upto now is:"+penalty;
+        else if (position == trapLocation) {
+            image.src = "trap3q.jpg";
+            gameOver = true
+            penalty = penalty + 4
+        } else {
+            image.src = "traoo1.jpg";
+        }
+        checkCount++;
+        penalty++;
+        document.getElementById("location").innerHTML = "Total locations checked now :" + checkCount;
+        document.getElementById("penalty").innerHTML = "Penalty upto now is :" + penalty;
+
+
+        // document.getElementById("location").innerHTML = checkCount;
+
+        // if (position === treasureLocation) {
+        //     gameover = true;
+        //     penalty = penalty - 3;
+        // }
+        // loc_text = document.getElementById("locations");
+        // loc_text.innerHTML = `Number of locations checked is ${checkCount}`;
+        // pen_text = document.getElementById("penalty");
+        // pen_text.innerHTML = `Penalty is ${penalty}`;
+        // // document.getElementById("penalty").innerHTML="penalty upto now is:"+penalty;
         //document.getElementById("lastcheck").innerHTML="Current position is:"+position;
- }
+    }
 
- function help()
-{
-let texth="";
-    texth=  "Can smell it";
-    let col = lastCheck%5;
-        let row = Math.floor(lastCheck/5);
+    function help() {
+        let texth = "";
+        texth = "Can smell it";
+        let col = lastCheck % 5;
+        let row = Math.floor(lastCheck / 5);
 
-        let treasureCol = treasureLocation%5;
-        let treasureRow = Math.floor(treasureLocation/5);
+        let treasureCol = treasureLocation % 5;
+        let treasureRow = Math.floor(treasureLocation / 5);
 
-        let col_diff = Math.abs(col-treasureCol) ;
-        let row_diff = Math.abs(row-treasureRow);
-if(((col_diff<=1)&&(row_diff==0))||((col_diff==0)&&(row_diff<=1)))
-{
-    texth= "Can smell it";
-}
-if(col_diff+row_diff==2)
-{
-    texth= "Close Matie";
-}
-else{texth= "Step Faster";}
- 
-penalty=penalty+2;
-document.getElementById("penalty").innerHTML="Penalty is :${penalty}";
-document.getElementById("help").innerHTML="Help:- ${texth}";
-
-//let texth=  "Can smell it";
-}
-function reset() {
-            checkCount = 0;
-            penalty = 0
-            treasureLocation = Math.round(Math.random() * (24));
-            trapLocation = Math.round(Math.random() * (24));
-            document.getElementById("locations").innerHTML = `Number of locations checked is ${checkCount}`;
-            document.getElementById("penalty").innerHTML = `Penalty is ${penalty}`;
-
+        let col_diff = Math.abs(col - treasureCol);
+        let row_diff = Math.abs(row - treasureRow);
+        if (((col_diff <= 1) && (row_diff == 0)) || ((col_diff == 0) && (row_diff <= 1))) {
+            texth = "Can smell it";
         }
-	
+        if (col_diff + row_diff == 2) {
+            texth = "Close Matie";
+        }
+        else { texth = "Step Faster"; }
+
+        penalty = penalty + 2;
+        document.getElementById("penalty").innerHTML = "Penalty is :${penalty}";
+        document.getElementById("help").innerHTML = "Help:- ${texth}";
+
+        //let texth=  "Can smell it";
+    }
+    function reset() {
+        checkCount = 0;
+        penalty = 0
+        treasureLocation = Math.round(Math.random() * (24));
+        trapLocation = Math.round(Math.random() * (24));
+        document.getElementById("locations").innerHTML = `Number of locations checked is ${checkCount}`;
+        document.getElementById("penalty").innerHTML = `Penalty is ${penalty}`;
+
+    }
+
 </script>
+
 </html>
