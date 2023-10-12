@@ -111,12 +111,18 @@
                     image.src="img-2.jpg";
                     checkCount+=1;
                     penalty+=1;
+                    document.getElementById("Checkcount").innerHTML="Total locations checked now :"+checkCount;
+                    document.getElementById("penalty").innerHTML="Penalty upto now is :"+penalty;
+
 
                 }
                 else if (position == trapLocation)
                 {image_source = "tr2.jpg";
                 checkCount+=1;
                     penalty+=1;
+                    document.getElementById("Checkcount").innerHTML="Total locations checked now :"+checkCount;
+                    document.getElementById("penalty").innerHTML="Penalty upto now is :"+penalty;
+
                     
             
                  }
@@ -131,29 +137,29 @@
             gameover=true;
             penalty=penalty-3;
         }
-        document.getElementById("penalty").innerHTML=penalty;
-        document.getElementById("lastcheck").innerHTML=position;
+        document.getElementById("penalty").innerHTML="penalty upto now is:"+penalty;
+        document.getElementById("lastcheck").innerHTML="Current position is:"+position;
  }
 
  function help()
 {
-
-    let texth=  "Can smell it";
+let texth="";
+    texth=  "Can smell it";
 let colum=position%5;
 let row=position/5;
 if((location+1 ===treasure)||(location-1===treasure))
 {
-    return "Can smell it";
+    texth= "Can smell it";
 }
 if((location+2 ===treasure)||(location-2===treasure))
 {
-    return "Close Matie";
+    texth= "Close Matie";
 }
-else{return "Step Faster";}
+else{texth= "Step Faster";}
  
 penalty=penalty+2;
-document.getElementById("penalty").innerHTML=penalty;
-document.getElementById("help").innerHTML=texth;
+document.getElementById("penalty").innerHTML="Penalty is :"+penalty;
+document.getElementById("help").innerHTML="Help:-"+texth;
 
 //let texth=  "Can smell it";
 }
